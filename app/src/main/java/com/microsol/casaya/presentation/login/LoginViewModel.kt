@@ -9,6 +9,7 @@ import com.google.firebase.auth.FirebaseAuthInvalidUserException
 import com.google.firebase.auth.FirebaseAuthUserCollisionException
 import com.google.firebase.auth.FirebaseAuthWeakPasswordException
 import com.google.firebase.auth.GoogleAuthProvider
+import com.google.firebase.messaging.FirebaseMessaging
 import com.microsol.casaya.domain.model.Usuario
 import com.microsol.casaya.domain.repository.UsuarioRepository
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -101,8 +102,8 @@ class LoginViewModel(
         }
     }
 
-    // Se llama después de cualquier login exitoso: crea el documento del
-    // usuario en Firestore si es la primera vez que entra (rol CLIENTE por defecto)
+    // Se llama después de cualquier login exitoso: crea el documento del usuario
+    // en Firestore si es la primera vez que entra, y guarda su token de notificaciones
     private suspend fun onLoginExitoso(nombreRegistro: String? = null) {
         val usuarioFirebase = auth.currentUser
         if (usuarioFirebase != null) {
@@ -113,6 +114,9 @@ class LoginViewModel(
                 foto = usuarioFirebase.photoUrl?.toString().orEmpty()
             )
             usuarioRepository.crearUsuarioSiNoExiste(usuario)
+
+            val token = FirebaseMessaging.getInstance().token.await()
+            usuarioRepository.guardarTokenNotificacion(usuarioFirebase.uid, token)
         }
         _state.value = _state.value.copy(cargando = false, loginExitoso = true)
     }
