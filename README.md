@@ -4,8 +4,8 @@
 ![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white)
 ![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
 ![Google Maps](https://img.shields.io/badge/Google_Maps-4285F4?style=for-the-badge&logo=googlemaps&logoColor=white)
-![Clean Architecture](https://img.shields.io/badge/Clean_Architecture-9C27B0?style=for-the-badge)
-![MVVM](https://img.shields.io/badge/MVVM-blue?style=for-the-badge)
+![Clean Architecture](https://img.shields.io/badge/Clean-Architecture-9C27B0?style=for-the-badge)
+![MVVM](https://img.shields.io/badge/Patrón-MVVM-blue?style=for-the-badge)
 ![minSdk](https://img.shields.io/badge/minSdk-24-success?style=for-the-badge)
 
 > Proyecto universitario para el curso **Desarrollo de Aplicaciones Móviles**: una app Android de búsqueda,
@@ -119,8 +119,6 @@ loginFragment (inicio)
 
 ## 🛠️ Stack tecnológico
 
-Versiones exactas, tal como están en `gradle/libs.versions.toml`:
-
 | Tecnología | Versión | Uso |
 |------------|---------|-----|
 | Android Gradle Plugin (AGP) | 9.3.0 | Compilación del proyecto (Kotlin va integrado) |
@@ -152,8 +150,8 @@ Versiones exactas, tal como están en `gradle/libs.versions.toml`:
 2. Saca el **SHA-1** de tu firma de debug: `./gradlew signingReport`, y agrégalo en Firebase.
 3. Habilita **Authentication** → Correo/contraseña y Google.
 4. Habilita **Firestore Database**.
-5. Habilita **Storage** (requiere plan Blaze — se mantiene gratis dentro de su cuota: 5GB almacenamiento / 100GB transferencia al mes).
-6. Habilita **Cloud Messaging** (viene activo por defecto en cualquier proyecto Firebase, no requiere paso extra).
+5. Habilita **Storage** (requiere plan Blaze).
+6. Habilita **Cloud Messaging**.
 7. Descarga `google-services.json` y colócalo en `app/`.
 8. Consigue una **API Key de Google Maps** (Google Cloud Console → Maps SDK for Android habilitado) y agrégala en `local.properties`:
    ```
@@ -181,9 +179,9 @@ notificaciones push, y soporte completo de modo oscuro.
 
 ## 🔮 Pendientes / mejoras futuras
 
-- [ ] Reglas de seguridad definitivas en Firestore y Storage (quedaron en modo de prueba a propósito — el proyecto no tendrá más actualizaciones tras la entrega)
-- [ ] Verificación de correo (`sendEmailVerification`)
-- [ ] Notificación push disparada automáticamente (hoy se envía manualmente desde Firebase Console → Messaging)
+- [ ] Reglas de seguridad definitivas en Firestore y Storage
+- [ ] Verificación de correo
+- [ ] Notificaciones push automáticas
 
 ## 📝 Notas
 
