@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Azul marino más claro que en modo día, para que se lea bien sobre fondo oscuro -->
+    <color name="primario">#2C4F6E</color>
+    <color name="primario_claro">#3D6482</color>
+    <color name="primario_oscuro">#16324A</color>
+
+    <!-- Verde menta más vivo, resalta mejor en oscuro -->
+    <color name="acento">#34D399</color>
+    <color name="acento_claro">#12352A</color>
+
+    <color name="fondo">#10151A</color>
+    <color name="superficie">#1B222B</color>
+
+    <color name="texto_primario">#ECEFF3</color>
+    <color name="texto_secundario">#9BA5B0</color>
+    <color name="borde">#2A333D</color>
+
+    <color name="error">#EF6161</color>
+    <color name="exito">#34D399</color>
+
+    <color name="blanco">#FFFFFF</color>
+</resources>

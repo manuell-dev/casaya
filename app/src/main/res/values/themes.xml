@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.CasaYa" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/primario</item>
+        <item name="colorPrimaryVariant">@color/primario_oscuro</item>
+        <item name="colorOnPrimary">@color/blanco</item>
+        <item name="colorSecondary">@color/acento</item>
+        <item name="colorOnSecondary">@color/blanco</item>
+        <item name="android:colorBackground">@color/fondo</item>
+        <item name="colorSurface">@color/superficie</item>
+        <item name="colorOnSurface">@color/texto_primario</item>
+        <item name="colorError">@color/error</item>
+    </style>
+
+    <style name="Theme.CasaYa" parent="Base.Theme.CasaYa" />
+
+    <style name="Theme.CasaYa.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@android:color/white</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/logo_casaya</item>
+        <item name="postSplashScreenTheme">@style/Theme.CasaYa</item>
+    </style>
+</resources>

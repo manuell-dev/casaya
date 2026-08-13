@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menuInicio" android:title="Inicio" android:icon="@android:drawable/ic_menu_gallery" />
+    <item android:id="@+id/menuPublicar" android:title="Publicar" android:icon="@android:drawable/ic_input_add" />
+    <item android:id="@+id/menuFavoritos" android:title="Favoritos" android:icon="@android:drawable/btn_star" />
+    <item android:id="@+id/menuMensajes" android:title="Mensajes" android:icon="@android:drawable/ic_dialog_email" />
+    <item android:id="@+id/menuPerfil" android:title="Perfil" android:icon="@android:drawable/ic_menu_myplaces" />
+</menu>

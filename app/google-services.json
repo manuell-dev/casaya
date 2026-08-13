@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "210970357372",
+    "project_id": "casaya-e7c04",
+    "storage_bucket": "casaya-e7c04.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:210970357372:android:99ea6b083c01b1d7fb23f9",
+        "android_client_info": {
+          "package_name": "com.microsol.casaya"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "210970357372-533ij0m6eoqa088d2jvuqu9eov8mi6hi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.microsol.casaya",
+            "certificate_hash": "18cef0e60b0a319a52ec4d69fd301b2ba2ca1776"
+          }
+        },
+        {
+          "client_id": "210970357372-c94152tdbbkgffladmi007kj94n76m8s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjdgOMFX1c31vQMT3B101GpJP2u2lgNaE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "210970357372-c94152tdbbkgffladmi007kj94n76m8s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

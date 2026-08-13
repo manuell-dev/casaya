@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Azul marino: color principal (confianza, seguridad) -->
+    <color name="primario">#16324A</color>
+    <color name="primario_claro">#2C4F6E</color>
+    <color name="primario_oscuro">#0C1F30</color>
+
+    <!-- Verde menta: acento -->
+    <color name="acento">#1D9E75</color>
+    <color name="acento_claro">#E6F6F0</color>
+
+    <color name="fondo">#F6F8FA</color>
+    <color name="superficie">#FFFFFF</color>
+
+    <color name="texto_primario">#1F2937</color>
+    <color name="texto_secundario">#6B7280</color>
+    <color name="borde">#E5E9ED</color>
+
+    <color name="error">#D64545</color>
+    <color name="exito">#1D9E75</color>
+
+    <color name="blanco">#FFFFFF</color>
+</resources>

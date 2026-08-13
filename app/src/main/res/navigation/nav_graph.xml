@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.microsol.casaya.presentation.login.LoginFragment"
+        android:label="Login">
+
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.microsol.casaya.presentation.home.HomeFragment"
+        android:label="Inicio">
+
+        <action
+            android:id="@+id/action_homeFragment_to_detalleFragment"
+            app:destination="@id/detalleFragment" />
+
+        <action
+            android:id="@+id/action_homeFragment_to_publicarFragment"
+            app:destination="@id/publicarFragment" />
+
+        <action
+            android:id="@+id/action_homeFragment_to_perfilFragment"
+            app:destination="@id/perfilFragment" />
+
+        <action
+            android:id="@+id/action_homeFragment_to_favoritosFragment"
+            app:destination="@id/favoritosFragment" />
+
+        <action
+            android:id="@+id/action_homeFragment_to_conversacionesFragment"
+            app:destination="@id/conversacionesFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/detalleFragment"
+        android:name="com.microsol.casaya.presentation.detalle.DetalleFragment"
+        android:label="Detalle">
+
+        <argument
+            android:name="propiedadId"
+            app:argType="string" />
+
+        <action
+            android:id="@+id/action_detalleFragment_to_chatFragment"
+            app:destination="@id/chatFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/publicarFragment"
+        android:name="com.microsol.casaya.presentation.publicar.PublicarFragment"
+        android:label="Publicar" />
+
+    <fragment
+        android:id="@+id/perfilFragment"
+        android:name="com.microsol.casaya.presentation.perfil.PerfilFragment"
+        android:label="Perfil">
+
+        <action
+            android:id="@+id/action_perfilFragment_to_detalleFragment"
+            app:destination="@id/detalleFragment" />
+
+        <action
+            android:id="@+id/action_perfilFragment_to_publicarFragment"
+            app:destination="@id/publicarFragment" />
+
+        <action
+            android:id="@+id/action_perfilFragment_to_favoritosFragment"
+            app:destination="@id/favoritosFragment" />
+
+        <action
+            android:id="@+id/action_perfilFragment_to_conversacionesFragment"
+            app:destination="@id/conversacionesFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/favoritosFragment"
+        android:name="com.microsol.casaya.presentation.favoritos.FavoritosFragment"
+        android:label="Favoritos">
+
+        <action
+            android:id="@+id/action_favoritosFragment_to_detalleFragment"
+            app:destination="@id/detalleFragment" />
+
+        <action
+            android:id="@+id/action_favoritosFragment_to_perfilFragment"
+            app:destination="@id/perfilFragment" />
+
+        <action
+            android:id="@+id/action_favoritosFragment_to_conversacionesFragment"
+            app:destination="@id/conversacionesFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/conversacionesFragment"
+        android:name="com.microsol.casaya.presentation.conversaciones.ConversacionesFragment"
+        android:label="Mensajes">
+
+        <action
+            android:id="@+id/action_conversacionesFragment_to_chatFragment"
+            app:destination="@id/chatFragment" />
+
+        <action
+            android:id="@+id/action_conversacionesFragment_to_perfilFragment"
+            app:destination="@id/perfilFragment" />
+
+        <action
+            android:id="@+id/action_conversacionesFragment_to_favoritosFragment"
+            app:destination="@id/favoritosFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.microsol.casaya.presentation.chat.ChatFragment"
+        android:label="Chat">
+
+        <argument
+            android:name="conversacionId"
+            app:argType="string" />
+
+        <argument
+            android:name="propiedadTitulo"
+            app:argType="string" />
+
+    </fragment>
+
+</navigation>
